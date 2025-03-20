@@ -4,7 +4,7 @@ function Localizador() {
   return (
     <div className="localizador">
  
-     < img src="src\assets\localizacion.png" alt="logo"   />
+     < img src="src\assets\local.svg" alt="logo"/>
      </div>
     
     

@@ -3,7 +3,7 @@ import "./logo.css";
 function Logo() {
   return (
     
-     < img src="src\assets\unnamed.png" alt="logo"   id="logo" />
+     < img src="src\assets\cinepolis.png" alt="logo"   id="logo" />
      
   );
 }

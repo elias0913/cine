@@ -1,8 +1,11 @@
-.nav1{
-    background-color: #000000;
+.nav1-container{
+    background-color: rgb(18, 28, 38);
     overflow: hidden;
     height: 50px;
     width: 100%;
     display: flex;
-    
+
+}
+.localizador-container{
+    margin-top: 5px;
 }

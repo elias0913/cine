@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+/* Estilos para el contenedor principal */
+.elpapi {
+  width: 100%; /* Ocupa todo el ancho de la página */
+  min-height: 100vh; /* Ocupa al menos el 100% del alto de la ventana */
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina paddings predeterminados */
+  box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
+}
