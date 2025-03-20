@@ -1,0 +1,98 @@
+/* Contenedor general de las tarjetas */
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+  gap: 20px; /* Espaciado entre tarjetas */
+  padding: 10px;
+  color: white;
+  position: relative; /* Ajuste de posición */
+  left: 15%; /* Desplaza el contenedor */
+  width: fit-content; /* Ajusta el ancho al contenido */
+}
+
+/* Tarjeta individual */
+.targeta {
+  width: 220px; /* Ancho fijo */
+  height: 370px; /* Altura fija */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta el contenido que desborde */
+  padding: 10px;
+  transition: transform 0.3s ease; /* Animación al hacer hover */
+}
+
+.targeta:hover {
+  transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+}
+
+/* Imagen dentro de la tarjeta */
+.ima1 {
+  width: 100%;
+  height: 300px; /* Altura fija de la imagen */
+  object-fit: cover; /* Ajusta la imagen manteniendo la relación de aspecto */
+  border-radius: 5px;
+}
+
+/* Contenedor del contenido (título + info) */
+.contenido {
+  display: flex;
+  flex-direction: column; /* Apila el contenido verticalmente */
+  gap: 5px;
+}
+
+/* Título de la película */
+.titulo1 {
+  font-size: 19px;
+  font-weight: bold;
+  color: #ffb400; /* Amarillo brillante */
+  text-align: left; /* Alineado a la izquierda */
+}
+
+/* Contenedor de la descripción y tiempo */
+.info {
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+  gap: 10px; /* Espacio entre descripción y tiempo */
+  flex-wrap: wrap; /* Permite que el contenido se ajuste si no cabe */
+}
+
+/* Descripción (clasificación de la película) */
+.descripcion {
+  font-size: 14px; /* Tamaño del texto */
+  color: #ffffff; /* Gris claro */
+  white-space: normal; /* Permite el salto de línea si el texto es largo */
+ 
+  word-wrap: break-word; /* Rompe palabras largas */
+}
+
+/* Línea divisoria (vertical y amarilla) */
+.divisor {
+  width: 2px; /* Grosor de la línea */
+  height: 20px; /* Largo de la línea */
+  background-color: #ffb400; /* Color amarillo */
+}
+
+/* Clasificación y tiempo */
+.clasificacion-tiempo {
+  font-size: 12px;
+  color: #ffffff; /* Blanco */
+  text-align: left;
+}
+.contenedor-tarjetas-fijas {
+
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  right: 40px;
+}
+
+.contenedor-proximamente {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}

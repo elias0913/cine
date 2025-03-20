@@ -1,0 +1,35 @@
+.hola {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  overflow: auto;
+  background-color: rgb(18, 28, 38);
+  color: white;
+  position: relative; /* Permite mover el contenedor */
+  left: 15%; /* Mueve el contenedor a la derecha */
+   /* Mueve el contenedor hacia abajo (opcional) */
+  width: fit-content;
+}
+
+.hola span {
+  padding: 10px 20px;
+  border-bottom: 3px solid transparent; /* Borde inferior transparente por defecto */
+  cursor: pointer;
+  transition: border-color 0.3s ease; /* Transición suave para el borde */
+  font-size: 20px;
+}
+
+.hola span:hover {
+  border-bottom-color: #fff; /* Color del borde inferior al hacer hover */
+}
+
+/* Estilos para el borde inferior cuando está seleccionado */
+.hola span.selected {
+  border-bottom-color: #ff6347; /* Color del borde inferior seleccionado */
+}
+.hola1{
+  width: 100%;
+  background-color: red;
+  margin: 0 auto;
+}

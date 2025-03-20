@@ -1,0 +1,88 @@
+/* Estilos generales del footer */
+.footer {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 100%; /* Asegúrate de que no tenga un ancho máximo limitado */
+    padding: 20px;
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Texto en blanco */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
+    margin: 0; /* Elimina márgenes predeterminados */
+    display: flex; /* Usa flexbox para organizar las secciones en fila */
+    justify-content: space-between; /* Separa las secciones */
+    align-items: flex-start; /* Alinea las secciones en la parte superior */
+    flex-wrap: wrap; /* Permite que las secciones se envuelvan en pantallas pequeñas */
+  }
+  
+  /* Estilos para cada sección del footer */
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre elementos */
+    flex: 1; /* Las secciones ocupan el espacio disponible */
+    min-width: 200px; /* Ancho mínimo para evitar que se compriman demasiado */
+    margin-bottom: 20px; /* Espacio entre secciones en pantallas pequeñas */
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffcc00; /* Color amarillo para los títulos */
+  }
+  
+  .footer-section span {
+    cursor: pointer; /* Cambia el cursor al pasar sobre los span */
+    font-size: 14px;
+  }
+  
+  .footer-section span:hover {
+    color: #ffcc00; /* Cambia el color al pasar el mouse */
+  }
+  
+  /* Estilos para la sección de contacto */
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px; /* Espacio a la izquierda para la línea vertical */
+    position: relative; /* Para posicionar la línea vertical */
+    flex: 1; /* La sección de contacto ocupa el espacio disponible */
+    min-width: 200px; /* Ancho mínimo para evitar que se compriman demasiado */
+  }
+  
+  /* Línea vertical que separa las secciones */
+  .footer-contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #fff; /* Línea vertical blanca */
+  }
+  
+  .footer-contact h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffcc00;
+  }
+  
+  .footer-contact span {
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .footer-contact span:hover {
+    color: #ffcc00;
+  }
+  
+  .footer-contact input {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #444; /* Fondo oscuro para los inputs */
+    color: #fff; /* Texto en blanco */
+    width: 100%; /* Los inputs ocupan todo el ancho disponible */
+    box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
+  }
