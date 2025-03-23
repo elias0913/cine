@@ -1,0 +1,64 @@
+/* Estilos del modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .modal {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    color: white;
+  }
+  
+  /* Estilos de los asientos */
+  .asientos-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 asientos por fila */
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .asiento {
+    background-color: #333; /* Color de fondo del asiento */
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .asiento.selected {
+    background-color: #e50914; /* Rojo para asientos seleccionados */
+  }
+  
+  /* Estilos de los botones del modal */
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .modal-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e50914; /* Rojo Cinépolis */
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .modal-buttons button:hover {
+    background-color: #b20710; /* Rojo más oscuro al hacer hover */
+  }
