@@ -3,7 +3,7 @@ import "./Footer.css"; // Importa los estilos del footer desde un archivo CSS ex
 
 function Footer() {
   return (
-    // Estructura principal del footer con la clase footer
+    // Estructura principal del footer con la clase "footer"
     <footer className="footer"> 
 
       {/* Primera sección: Cartelera */}
